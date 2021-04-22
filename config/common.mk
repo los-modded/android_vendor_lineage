@@ -203,6 +203,7 @@ else
 endif
 
 # Set LINEAGE_BUILDTYPE from the env RELEASE_TYPE, for jenkins compat
+LINEAGE_BUILDTYPE := HOMEMADE
 
 ifndef LINEAGE_BUILDTYPE
     ifdef RELEASE_TYPE
@@ -214,7 +215,7 @@ endif
 
 # Filter out random types, so it'll reset to UNOFFICIAL
 ifeq ($(filter RELEASE NIGHTLY SNAPSHOT EXPERIMENTAL,$(LINEAGE_BUILDTYPE)),)
-    LINEAGE_BUILDTYPE :=
+    LINEAGE_BUILDTYPE := HOMEMADE
 endif
 
 ifdef LINEAGE_BUILDTYPE
