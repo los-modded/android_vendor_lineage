@@ -155,4 +155,9 @@
     <string name="config_systemTextIntelligence">com.google.android.as</string>
     <string name="config_systemUiIntelligence">com.google.android.as</string>
     <string name="config_systemVisualIntelligence">com.google.android.as</string>
+
+    <!-- Control the default night mode to use when there is no other mode override set. </resources> One 
+         of the following values (see UiModeManager.java):
+             0 - MODE_NIGHT_AUTO 1 - MODE_NIGHT_NO 2 - MODE_NIGHT_YES -->
+    <integer name="config_defaultNightMode">2</integer>
 </resources>
